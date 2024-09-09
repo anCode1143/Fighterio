@@ -1,7 +1,7 @@
 import processing.core.PApplet;
 import java.util.ArrayList;
 
-public class MySketch extends PApplet {
+public class MySketch extends PApplet { //main
 	public static void main(String[] args) {
         PApplet.main("MySketch");
     }
