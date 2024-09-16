@@ -22,7 +22,7 @@ public class MySketch extends PApplet { //main
       size(SCREENX, SCREENY);
       player = new Player(this); // Pass 'this' PApplet instance to Player
       civilians = new ArrayList<Civilian>();// Create 100 Civilian instances
-      for (int i = 0; i < 100; i++) {
+      for (int i = 0; i < 200; i++) {
           civilians.add(new Civilian(this));
       }
     }
