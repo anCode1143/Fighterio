@@ -27,7 +27,7 @@ class Player{
     	scythe = new Scythe(reference);
     	spear = new Spear(reference);
     	crossbow = new Crossbow(reference);
-    	weapons = new Weapon[]{sword, scythe, spear, crossbow};
+    	weapons = new Weapon[]{sword, scythe, spear, crossbow}; //crossbow
     	selectedWeapon = weapons[0]; //choose weapon
     }
 

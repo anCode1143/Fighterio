@@ -35,11 +35,6 @@ public class MySketch extends PApplet { //main
       for (Civilian civilian : civilians) { // Update and display each civilian
           civilian.display();
       }
-      if (keyPressed) {
-    	    if (key == 't' || key == 'T') {
-    	        System.out.println(Player.y - CameraMove.offsetY);
-    	    }
-    	}
       
     }
     public void mousePressed() {

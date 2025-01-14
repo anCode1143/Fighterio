@@ -8,11 +8,11 @@ public abstract class RangedWeapon extends Weapon{
     float attackSpeed;
     float angle;
     PImage projectileImage;
-    
+
     public RangedWeapon(PApplet reference) {
         this.reference = reference;
     }
-    
+
 	@Override
     public void displayWeapon() {
         // Calculate the angle towards the mouse cursor, adding an offset for rotation
@@ -49,7 +49,7 @@ public abstract class RangedWeapon extends Weapon{
                 attackProgress = 0;
             }
         }
-        
+
         for (Projectile projectile : projectiles) {
             projectile.update();
             projectile.display();
@@ -68,7 +68,7 @@ public abstract class RangedWeapon extends Weapon{
         // Clean up inactive projectiles
         projectiles.removeIf(p -> !p.active);
 	}
-	
+
 	@Override
 	public void attack() {
 		projectiles.add(new Projectile(reference, Player.x, Player.y, angle, 10, maxAttackDistance));

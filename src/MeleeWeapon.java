@@ -76,7 +76,7 @@ public abstract class MeleeWeapon extends Weapon{
 
             float distanceDiffX = Math.abs(playerWorldX - civilianWorldX);
             float distanceDiffY = Math.abs(playerWorldY - civilianWorldY);
-            
+
           //if civilian is within range, kill it
             if (distanceDiffX < maxAttackDistance && distanceDiffY < maxAttackDistance) {
                 killed = true;
@@ -85,8 +85,8 @@ public abstract class MeleeWeapon extends Weapon{
         }
 
         if (killed) {
-            MySketch.civilians.removeIf(c -> 
-                c != null && 
+            MySketch.civilians.removeIf(c ->
+                c != null &&
                 Math.abs(playerWorldX - c.x) < maxAttackDistance &&
                 Math.abs(playerWorldY - c.y) < maxAttackDistance
             );

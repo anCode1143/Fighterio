@@ -7,11 +7,11 @@ public class Crossbow extends RangedWeapon{
         // Subclass-specific values
         maxAttackDistance = 1000;
         attackSpeed = 0.085f;
-        
+
         // Resize the sword image
         float scale = 0.30f;
         weaponImage.resize((int) (weaponImage.width * scale), (int) (weaponImage.height * scale));
-        
+
         // Calculate the position of the sword relative to the player
         weaponOffsetDistance = weaponImage.height/100;
         holdingPosition = 5;
