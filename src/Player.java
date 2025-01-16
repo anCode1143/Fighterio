@@ -72,21 +72,6 @@ class Player{
             x = reference.mouseX;
         }
 
-        if (reference.keyPressed && (x >= 0 && x <= MySketch.SCREENX && y >= 0 && y <= MySketch.SCREENY)) 
-        {
-            if (reference.key == 'w' || reference.key == 'W') {
-                y += speed; // Move up
-            }
-            if (reference.key == 's' || reference.key == 'S') {
-                y -= speed; // Move down
-            }
-            if (reference.key == 'a' || reference.key == 'A') {
-                x += speed; // Move left
-            }
-            if (reference.key == 'd' || reference.key == 'D') {
-                x -= speed; // Move right
-            }
-        }
         
     }
     public void attack() {
